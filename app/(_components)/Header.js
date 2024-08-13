@@ -25,7 +25,7 @@ export default function Header() {
 
     return (
         <>
-            <div className={`flex flex-row p-4 lg:px-16 lg:py-8 items-center justify-between h-16 lg:h-20 z-50 fixed top-0 left-0 right-0 transition-all duration-300 ${isScrolled ? 'bg-pastell-purple/80 backdrop-blur-xl border-b border-gray-950/10' : ''}`}>
+            <div className={`flex flex-row p-4 lg:px-16 lg:py-8 items-center justify-between h-16 lg:h-20 z-50 fixed top-0 left-0 right-0 transition-all duration-300 z-100 ${isScrolled ? 'bg-pastell-violet/80 backdrop-blur-3xl border-b border-gray-950/10' : ''}`}>
                 <div className="flex-none">
                     <Link href='https://www.hanilians.xyz/'>
                         <Image src='/logo.svg' alt='logo' width={100} height={100} />
@@ -48,14 +48,14 @@ export default function Header() {
                     </ul>
                 </nav>
                 <div className="flex-none flex items-center space-x-4">
-                    <Link className='hidden lg:flex px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-full text-white transition-all duration-300' href="https://forms.gle/mzed2UYu9L5PY656A">프로그램 지원하기</Link>
-                    <Link className='lg:hidden flex px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-full text-white text-sm transition-all duration-300' href="https://www.hanilians.xyz">웹 방문하기</Link>
+                    <Link className='hidden lg:flex px-4 py-2 bg-indigo-500 hover:bg-indigo-600 rounded-full text-white transition-all duration-300' href="https://forms.gle/mzed2UYu9L5PY656A">프로그램 지원하기</Link>
+                    <Link className='lg:hidden flex px-4 py-2 bg-indigo-500 hover:bg-indigo-600 rounded-full text-white text-sm transition-all duration-300' href="https://www.hanilians.xyz">웹 방문하기</Link>
                 </div>
             </div>
             
             {/* Bottom CTA for mobile */}
             <div className='fixed lg:hidden bottom-0 left-0 right-0 p-4 z-50 bg-gradient-cta'>
-                <Link className='flex justify-center w-full px-4 py-4 bg-blue-500 hover:bg-blue-600 rounded-xl text-white text-lg font-semibold transition-all duration-300' href="https://forms.gle/mzed2UYu9L5PY656A">
+                <Link className='flex justify-center w-full px-4 py-4 bg-indigo-500 hover:bg-indigo-600 rounded-xl text-white text-lg font-semibold transition-all duration-300' href="https://forms.gle/mzed2UYu9L5PY656A">
                     프로그램 지원하기
                 </Link>
             </div>
