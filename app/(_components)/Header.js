@@ -27,7 +27,7 @@ export default function Header() {
         <>
             <div className={`flex flex-row p-4 lg:px-16 lg:py-8 items-center justify-between h-16 lg:h-20 z-50 fixed top-0 left-0 right-0 transition-all duration-300 ${isScrolled ? 'bg-pastell-purple/80 backdrop-blur-xl border-b border-gray-950/10' : ''}`}>
                 <div className="flex-none">
-                    <Link href='/'>
+                    <Link href='https://www.hanilians.xyz/'>
                         <Image src='/logo.svg' alt='logo' width={100} height={100} />
                     </Link>
                 </div>
